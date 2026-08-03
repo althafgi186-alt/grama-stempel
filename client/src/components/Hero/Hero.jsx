@@ -9,7 +9,7 @@ function Hero() {
           <div>
 
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
-              Grama Stempel Official
+              Grama Stempel Order
             </h1>
 
             <h2 className="text-3xl md:text-4xl font-semibold mt-4 text-gray-700">
