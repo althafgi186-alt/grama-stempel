@@ -13,7 +13,7 @@ function Hero() {
             </h1>
 
             <h2 className="text-3xl md:text-4xl font-semibold mt-4 text-gray-700">
-  Jasa Pembuatan Stempel Cepat & Berkualitas 😊
+  Jasa Pembuatan Stempel Cepat & Berkualitas ⚡
 </h2>
 
             <p className="mt-6 text-lg text-gray-600 leading-8">
