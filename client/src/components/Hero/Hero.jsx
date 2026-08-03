@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="bg-white">
+    <section id="home" className="bg-white">
       <div className="max-w-7xl mx-auto px-6 py-20">
 
         <div className="grid md:grid-cols-2 items-center gap-12">
@@ -13,8 +13,7 @@ function Hero() {
             </h1>
 
             <h2 className="text-3xl md:text-4xl font-semibold mt-4 text-gray-700">
-  Jasa Pembuatan Stempel
-Cepat & Berkualitas
+  Jasa Pembuatan Stempel Profesional di Banda Aceh
 </h2>
 
             <p className="mt-6 text-lg text-gray-600 leading-8">
