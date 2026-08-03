@@ -9,11 +9,11 @@ function Hero() {
           <div>
 
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
-              Grama Stempel
+              Grama Stempel Official
             </h1>
 
             <h2 className="text-3xl md:text-4xl font-semibold mt-4 text-gray-700">
-  Jasa Pembuatan Stempel Profesional di Banda Aceh
+  Jasa Pembuatan Stempel Cepat & Berkualitas 
 </h2>
 
             <p className="mt-6 text-lg text-gray-600 leading-8">
