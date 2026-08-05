@@ -1,6 +1,10 @@
 function Hero() {
   return (
-    <section id="home" className="bg-white">
+    <section
+  id="hero"
+  data-aos="fade-left"
+  className="bg-white"
+>
       <div className="max-w-7xl mx-auto px-6 py-20">
 
         <div className="grid md:grid-cols-2 items-center gap-12">

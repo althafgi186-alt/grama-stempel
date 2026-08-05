@@ -5,6 +5,7 @@ import FAQ from "../../sections/FAQ";
 import OrderSteps from "../../sections/OrderSteps.jsx";
 import Tracking from "../../sections/Tracking";
 import Location from "../../sections/Location";
+import Footer from "../../sections/Footer";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Tracking />
       <FAQ />
       <Location />
+      <Footer />
     </>
   );
 }
