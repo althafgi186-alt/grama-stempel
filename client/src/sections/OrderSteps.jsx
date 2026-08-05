@@ -11,7 +11,11 @@ function OrderSteps() {
           Ikuti langkah berikut untuk memesan stempel dengan mudah.
         </p>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-5">
+        <div className="mt-14 relative">
+
+          <div className="hidden md:block absolute top-12 left-0 right-0 h-1 bg-gray-200"></div>
+
+          <div className="grid gap-8 md:grid-cols-5 relative">
 
           {/* Card 1 */}
           <div className="bg-white shadow-lg rounded-2xl p-6 text-center hover:-translate-y-3 hover:scale-105 hover:shadow-2xl transition-all duration-300">
@@ -49,7 +53,7 @@ function OrderSteps() {
             </p>
           </div>
 
-          {/* Card 5 */}
+                    {/* Card 5 */}
           <div className="bg-white shadow-lg rounded-2xl p-6 text-center hover:-translate-y-3 hover:scale-105 hover:shadow-2xl transition-all duration-300">
             <div className="text-5xl">🎉</div>
             <h3 className="mt-4 font-bold text-lg">Ambil Pesanan</h3>
@@ -58,11 +62,14 @@ function OrderSteps() {
             </p>
           </div>
 
-        </div>
+        </div> {/* Tutup grid */}
 
-      </div>
-    </section>
-  );
+      </div> {/* Tutup mt-14 relative */}
+
+    </div> {/* Tutup max-w-6xl */}
+
+  </section>
+);
 }
 
 export default OrderSteps;
