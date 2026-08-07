@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 function Navbar() { 
 
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
 useEffect(() => {
   const handleScroll = () => {
@@ -70,6 +71,21 @@ useEffect(() => {
 </li>
         </ul>
 
+        {/* Mobile Menu Button */}
+<button
+  onClick={() => setMenuOpen(!menuOpen)}
+  className="md:hidden text-2xl text-gray-700 hover:text-blue-600 transition-all duration-300"
+  aria-label={menuOpen ? "Tutup menu" : "Buka menu"}
+>
+  <span
+    className={`inline-block transition-transform duration-500 ${
+      menuOpen ? "rotate-90" : "rotate-0"
+    }`}
+  >
+    {menuOpen ? "✕" : "☰"}
+  </span>
+</button>
+
         {/* Tombol */}
         <a
   href="#stamp-gallery"
@@ -95,6 +111,70 @@ useEffect(() => {
 </a>
 
       </div>
+
+      {/* Mobile Menu */}
+<div
+  className={`
+  md:hidden
+  overflow-hidden
+  bg-white/95
+  backdrop-blur-md
+  shadow-lg
+  transition-all
+  duration-700
+  ease-in-out
+  ${
+    menuOpen
+      ? "max-h-[500px] opacity-100 translate-y-0"
+      : "max-h-0 opacity-0 -translate-y-2"
+  }
+`}
+>
+  <div className="px-6 py-5 space-y-4">
+
+    <a
+      href="#hero"
+      onClick={() => setMenuOpen(false)}
+      className="block text-gray-700 font-medium hover:text-blue-600 transition"
+    >
+      Home
+    </a>
+
+    <a
+      href="#stamp-gallery"
+      onClick={() => setMenuOpen(false)}
+      className="block text-gray-700 font-medium hover:text-blue-600 transition"
+    >
+      Galeri
+    </a>
+
+    <a
+      href="#tracking"
+      onClick={() => setMenuOpen(false)}
+      className="block text-gray-700 font-medium hover:text-blue-600 transition"
+    >
+      Tracking
+    </a>
+
+    <a
+      href="#faq"
+      onClick={() => setMenuOpen(false)}
+      className="block text-gray-700 font-medium hover:text-blue-600 transition"
+    >
+      FAQ
+    </a>
+
+    <a
+      href="#stamp-gallery"
+      onClick={() => setMenuOpen(false)}
+      className="block text-center bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-semibold transition"
+    >
+      Pesan Sekarang
+    </a>
+
+  </div>
+</div>
+
     </nav>
   );
 }

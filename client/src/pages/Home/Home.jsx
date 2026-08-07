@@ -6,6 +6,7 @@ import OrderSteps from "../../sections/OrderSteps.jsx";
 import Tracking from "../../sections/Tracking";
 import Location from "../../sections/Location";
 import Footer from "../../sections/Footer";
+import BackToTop from "../../components/BackToTop/BackToTop";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <FAQ />
       <Location />
       <Footer />
+      <BackToTop />
     </>
   );
 }

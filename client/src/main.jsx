@@ -8,7 +8,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 AOS.init({
-  duration: 1500,
+  duration: 2000,
   once: true,
 });
 
