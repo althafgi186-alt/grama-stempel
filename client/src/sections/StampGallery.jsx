@@ -1,4 +1,4 @@
-const waNumber = "082260765090"; // Nomor WhatsApp tujuan
+const waNumber = "6282260765090"; // Nomor WhatsApp tujuan
 const stampData = [
   {
     code: "GS-001",
@@ -53,9 +53,11 @@ function StampGallery() {
 
         <div className="grid gap-8 mt-14 sm:grid-cols-2 lg:grid-cols-3">
 
-          {stampData.map((stamp) => (
+          {stampData.map((stamp, index) => (
             <div
   key={stamp.code}
+  data-aos="fade-up"
+  data-aos-delay={index * 100}
   className="
     group
     bg-white
@@ -63,12 +65,9 @@ function StampGallery() {
     shadow-md
     overflow-hidden
     border
-    border-gray-200
-    hover:border-blue-500
-    hover:bg-blue-50/30
-    hover:-translate-y-3
-    hover:scale-[1.03]
+    border-gray-100
     hover:shadow-2xl
+    hover:-translate-y-2
     transition-all
     duration-500
   "
@@ -79,11 +78,13 @@ function StampGallery() {
     alt={stamp.code}
     className="
 w-full
-h-56
-object-cover
-transition-all
+h-64
+object-contain
+bg-gray-50
+p-4
+transition-transform
 duration-500
-group-hover:scale-110
+group-hover:scale-105
 "
   />
 </div>
@@ -100,17 +101,17 @@ group-hover:scale-110
 
                 <a
   href={`https://wa.me/${waNumber}?text=${encodeURIComponent(
-    `Halo Grama Stempel.
+  `Halo Grama Stempel,
 
 Saya ingin memesan stempel dengan detail berikut:
 
-Kode : ${stamp.code}
-Ukuran : ${stamp.size}
+Kode Model: ${stamp.code}
+Ukuran    : ${stamp.size}
 
 Mohon informasi mengenai harga dan proses pemesanannya.
 
 Terima kasih.`
-  )}`}
+)}`}
   target="_blank"
   rel="noopener noreferrer"
 >
